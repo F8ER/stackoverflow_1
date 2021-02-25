@@ -89,7 +89,11 @@ function ReadCertificateSerialFromFile
 
 function Help
 {
-	printf '\n -d - Enable certain output for debugging\n\n';
+	echo
+	printf ' Description: OpenSSL serial generation test\n\n';
+	printf ' Additional arguments:\n\n';
+	printf '   -d - Enable certain output for debugging\n';
+	printf '   -h - Help message\n\n';
 }
 
 function Main
