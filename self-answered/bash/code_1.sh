@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # -------------------------- #
-# User Variables             #
+# User variables             #
 # -------------------------- #
 
 certificateAuthorityName="certificate_authority";
@@ -87,8 +87,18 @@ function ReadCertificateSerialFromFile
 # Methods                    #
 # -------------------------- #
 
+function Help
+{
+	printf '\n -d - Enable certain output for debugging\n';
+}
+
 function Main
 {
+	if [[ "$1" == *"h"* ]];
+		Help;
+		exit 0;
+	fi
+
 	if [[ "$1" == *"d"* ]];
 	then
 		stdout='/dev/stdout';
