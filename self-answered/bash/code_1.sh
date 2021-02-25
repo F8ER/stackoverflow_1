@@ -89,12 +89,13 @@ function ReadCertificateSerialFromFile
 
 function Help
 {
-	printf '\n -d - Enable certain output for debugging\n';
+	printf '\n -d - Enable certain output for debugging\n\n';
 }
 
 function Main
 {
 	if [[ "$1" == *"h"* ]];
+	then
 		Help;
 		exit 0;
 	fi
