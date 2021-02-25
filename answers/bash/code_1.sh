@@ -1,11 +1,8 @@
 #!/bin/bash
 
 # -------------------------- #
-# Variables                  #
+# User Variables             #
 # -------------------------- #
-
-stdout='/dev/null';
-stderr='/dev/null';
 
 certificateAuthorityName="certificate_authority";
 certificateAuthorityPrivateKeyPassword="";
@@ -13,6 +10,12 @@ certificateAuthorityPrivateKeyPassword="";
 certificateName="certificate";
 certificateTestPostfix="_test";
 
+# -------------------------- #
+# Variables                  #
+# -------------------------- #
+
+stdout='/dev/null';
+stderr='/dev/null';
 certificateAuthorityFilepath="$( pwd )/${certificateAuthorityName}";
 certificateFilepath="$( pwd )/${certificateName}";
 
